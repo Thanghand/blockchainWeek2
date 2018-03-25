@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MetaCoin - Truffle Webpack Demo w/ Frontend</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+
+<body>
+  <button></button>
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h3 class="jumbotron-heading">Welcome to DApp Ecomerce example</h1>
+        <div id="input-user">
+          <input id="username" placeholder="Username"></input>
+          <button id="start-escrow" onclick="App.login()">Login</button>
+        </div>
+        <div id="user-profile"></div>
+        
+        <div id="escrow">
+        </div>
+        <div id="escrow-status">
+        </div>
+    </div>
+  </section>
+  <div class="container">
+    <ul class="nav">
+      <li class="nav-item">
+        <button id="start-escrow" onclick="App.getProducts('SMARTPHONE')">SMARTPHONE</button>
+      </li>
+      <li class="nav-item">
+        <button id="start-escrow" onclick="App.getProducts('LAPTOP')">LAPTOP</button>
+      </li>
+    </ul>
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row" id="product-list">
+
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+</body>
+
+</html>
